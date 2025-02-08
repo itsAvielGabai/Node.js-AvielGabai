@@ -40,7 +40,7 @@ Ensure you have the following installed:
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone ################################################
+   git clone https://github.com/itsAvielGabai/Node.js-AvielGabai
    ```
 2. Install dependencies:
    ```bash
