@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Overview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>API Overview</h1>
+    </header>
+
+    <div class="container">
+        <p>Welcome to the API documentation for managing users and cards. Click on a section to view its details.</p>
+
+        <div class="api-card" onclick="toggleSection('users-api')">
+            <h2>Users API</h2>
+        </div>
+        <div id="users-api" class="api-details">
+            <table>
+                <tr>
+                    <th>Method</th>
+                    <th>Endpoint</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>GET</td>
+                    <td><code>/users</code></td>
+                    <td>Retrieve all users (admin only).</td>
+                </tr>
+                <tr>
+                    <td>GET</td>
+                    <td><code>/users/:id</code></td>
+                    <td>View details for a specific user.</td>
+                </tr>
+                <tr>
+                    <td>POST</td>
+                    <td><code>/users/register</code></td>
+                    <td>Register a new user.</td>
+                </tr>
+                <tr>
+                    <td>POST</td>
+                    <td><code>/users/login</code></td>
+                    <td>Login an existing user.</td>
+                </tr>
+                <tr>
+                    <td>PUT</td>
+                    <td><code>/users/:id</code></td>
+                    <td>Update user details.</td>
+                </tr>
+                <tr>
+                    <td>DELETE</td>
+                    <td><code>/users/:id</code></td>
+                    <td>Delete a user.</td>
+                </tr>
+            </table>
+            <p>More details: <a href="https://documenter.getpostman.com/view/40748248/2sAYX8K1kz" target="_blank">Users API documentation</a>.</p>
+        </div>
+
+        <div class="api-card" onclick="toggleSection('cards-api')">
+            <h2>Cards API</h2>
+        </div>
+        <div id="cards-api" class="api-details">
+            <table>
+                <tr>
+                    <th>Method</th>
+                    <th>Endpoint</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>GET</td>
+                    <td><code>/cards</code></td>
+                    <td>Retrieve all cards.</td>
+                </tr>
+                <tr>
+                    <td>GET</td>
+                    <td><code>/cards/:id</code></td>
+                    <td>View details of a specific card.</td>
+                </tr>
+                <tr>
+                    <td>POST</td>
+                    <td><code>/cards</code></td>
+                    <td>Create a new card (business only).</td>
+                </tr>
+                <tr>
+                    <td>PUT</td>
+                    <td><code>/cards/:id</code></td>
+                    <td>Update a card.</td>
+                </tr>
+                <tr>
+                    <td>DELETE</td>
+                    <td><code>/cards/:id</code></td>
+                    <td>Delete a card.</td>
+                </tr>
+                <tr>
+                    <td>PATCH</td>
+                    <td><code>/cards/:id</code></td>
+                    <td>Like or unlike a card.</td>
+                </tr>
+                <tr>
+                    <td>PATCH</td>
+                    <td><code>/cards/bizNumber/:id</code></td>
+                    <td>Change business number.</td>
+                </tr>                
+            </table>
+            <p>More details: <a href="https://documenter.getpostman.com/view/40748248/2sAYX8K291" target="_blank">Cards API documentation</a>.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>API Documentation © 2025</p>
+    </footer>
+
+    <script>
+        function toggleSection(sectionId) {
+            let section = document.getElementById(sectionId);
+            section.style.display = (section.style.display === "block") ? "none" : "block";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+[
+    {
+        "name": {
+            "first": "Aviel",
+            "middle": "",
+            "last": "Gabai"
+        },
+        "isBusiness": true,
+        "isAdmin": true,
+        "phone": "0544547178",
+        "email": "its.avielgabai@gmail.com",
+        "password": "Ag110303!",
+        "address": {
+            "state": "Israel",
+            "country": "Israel",
+            "city": "Bat-Yam",
+            "street": "Hashar Sapira",
+            "houseNumber": 11,
+            "zip": 10
+        },
+        "image": {
+            "url": "",
+            "alt": ""
+        }
+    },
+    {
+        "name": {
+            "first": "Shiri",
+            "middle": "",
+            "last": "Chaduri"
+        },
+        "image": {
+            "url": "",
+            "alt": ""
+        },
+        "isBusiness": true,
+        "isAdmin": false,
+        "email": "shiri2003@gmail.com",
+        "password": "ShiriPassword123!@#",
+        "address": {
+            "street": "Mair",
+            "city": "Tel Aviv",
+            "state": "",
+            "zip": 32532,
+            "country": "Israel",
+            "houseNumber": "10"
+        },
+        "phone": "0501234567"
+    },
+    {
+        "name": {
+            "first": "Netanel",
+            "middle": "H.",
+            "last": "Taragano"
+        },
+        "image": {
+            "url": "",
+            "alt": ""
+        },
+        "isBusiness": false,
+        "isAdmin": false,
+        "email": "netanel.taragano@bizmail.com",
+        "password": "NetanelPassword123!@#",
+        "address": {
+            "street": "street40",
+            "city": "Haifa",
+            "state": "",
+            "zip": 12512,
+            "country": "Israel",
+            "houseNumber": "87"
+        },
+        "phone": "0551234123"
+    }
+]
